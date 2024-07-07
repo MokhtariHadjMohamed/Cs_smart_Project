@@ -35,3 +35,6 @@ Cs_Smart_Project/
    git clone https://github.com/yourusername/my_flask_app.git
    cd my_flask_app
 
+2. **Run the applecation:**
+   ```bach
+   flask --app flaskr run
