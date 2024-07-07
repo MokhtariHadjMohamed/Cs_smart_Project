@@ -1,7 +1,10 @@
-from flask import render_template
+from flask import render_template, request
 from flaskr import app
 
 @app.route('/')
-@app.route('/index')
+@app.route('/index', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html', title='Home')
+    name = "world"
+    if request.method == 'POST':
+        name = request.form['name']
+    return render_template('index.html', title='Home', name =name)
