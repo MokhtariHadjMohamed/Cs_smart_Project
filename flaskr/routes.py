@@ -7,4 +7,4 @@ def index():
     name = "world"
     if request.method == 'POST':
         name = request.form['name']
-    return render_template('index.html', title='Home', name =name)
+    return render_template('index.html', title='hobbies', name =name)
